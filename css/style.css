@@ -1,0 +1,320 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+ul ol {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+}
+/* Root */
+:root {
+  --h1-font-size: 2.4rem;
+  --h1-line-height: 3.2rem;
+  --h1-font-weight: 800;
+
+  --p-font-size: 1.4rem;
+  --p-line-height: 1.6rem;
+  --inputTextColor-color: #848484;
+
+  --h4-font-size: 1.8rem;
+  --h4-line-height: 2.6rem;
+
+  --body-bc-in-light-color: #ffffff;
+  --body-bc-in-lightfor-body-color: #ffffff;
+  --in-light-mode-texta-color: #111517;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--body-bc-in-lightfor-body-color);
+  color: var(--in-light-mode-texta-color);
+}
+/* Navbar */
+.site-header {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header img {
+  cursor: pointer;
+}
+.navbar-wrapper {
+  box-shadow: 0px 2px 4px 0px #0000000e;
+  margin-bottom: 4.8rem;
+  background-color: var(--body-bc-in-light-color);
+}
+.site-header__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  line-height: var(--h1-line-height);
+}
+
+/* Navbar end */
+.input-and-filter_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+.form-control {
+  width: 100%;
+  max-width: 480px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px 0px #0000000e;
+  cursor: pointer;
+  gap: 2.4rem;
+  padding-left: 3.2rem;
+  background-color: var(--body-bc-in-light-color);
+}
+.search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  color: var(--inputTextColor-color);
+  background-color: var(--body-bc-in-light-color);
+
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+  outline: none;
+}
+.filter_wrapper {
+  width: 20rem;
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4.8rem;
+  box-shadow: 0px 2px 9px 0px #0000000e;
+  padding-right: 2.2rem;
+  border-radius: 1rem;
+  background-color: var(--body-bc-in-light-color);
+  cursor: pointer;
+}
+
+.filter_wrapper span {
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+}
+.other-countries {
+  width: 20rem;
+  height: 20.5rem;
+  box-shadow: 0px 2px 9px 0px #0000000e;
+  margin-top: 0.4rem;
+  position: absolute;
+  background-color: var(--body-bc-in-light-color);
+  border-radius: 1rem;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.types {
+  position: relative;
+  margin-left: 2.4rem;
+  margin-top: 1.6rem;
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+  color: var(--in-light-mode-texta-color);
+}
+.hidden {
+  display: none !important;
+}
+.dark-mode {
+  --body-bc-in-lightfor-body-color: #202c36;
+  --in-light-mode-texta-color: #fff;
+  --body-bc-in-light-color: #2b3844;
+}
+/* Header and header hero qismlari tugadi */
+/* =============================================================================== */
+/* Country-cards */
+.countries-wrapper-item {
+  gap: 4.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.countries-list {
+  width: 26.4rem;
+  height: 33.6rem;
+  box-shadow: 0px 0px 7px 2px #11111111;
+  border-radius: 1rem;
+  background-color: var(--body-bc-in-light-color);
+}
+.img-country-flag {
+  margin-bottom: 2.4rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.information-country {
+  margin-left: 2.4rem;
+}
+.country-name {
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+  color: var(--in-light-mode-texta-color);
+  padding-bottom: 1.6rem;
+}
+.informations {
+  padding-bottom: 0.8rem;
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+  color: var(--in-light-mode-texta-color);
+}
+main {
+  flex-grow: 1;
+  margin-bottom: 4.5rem;
+}
+/* Overlay */
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_wrapper-div{
+    display: flex;
+}
+.about_btn{
+  width: 13.6rem;
+  height: 4rem;
+  margin-left: 15.8rem;
+  margin-bottom: 8rem;
+  box-shadow: 0px 0px 7px 0px #0000004B;
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+  background-color: var(--body-bc-in-light-color);
+  border:0;
+}
+.about_btn a {
+  color: var(--in-light-mode-texta-color);
+}
+.about_country-name{
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 4.3rem;
+  margin-left: 2rem;
+  margin-bottom: 2.3rem;
+}
+.img_wrapper{
+  margin-right: 12rem;
+}
+.about_informations2{
+  margin-top: 5rem;
+}

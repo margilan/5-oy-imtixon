@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5-oy imtihon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <header class="site-header container">
+        <h1 class="site-header__title">Where in the world?</h1>
+
+        <img
+          class="hidden"
+          id="dark_btn"
+          src="../img/svg/site-in-dark-mode-icon.svg"
+          alt=""
+        />
+        <img
+          id="light_btn"
+          src="../img/svg/site-in-light-mode-icon.svg"
+          alt="Site mode icon-svg"
+          width="108"
+          height="22"
+        />
+      </header>
+    </div>
+
+    <main>
+      <div class="header-hero-wrapper container">
+        <div class="input-and-filter_wrapper">
+          <div class="form-control">
+            <label for="search-input">
+              <img
+                class="search-img-input"
+                src="../img/svg/search.svg"
+                alt=""
+              />
+            </label>
+            <input
+              id="in-dark-mode-input"
+              class="search-input"
+              type="text"
+              placeholder="Search for a country…"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            <div id="filter_wrapper" class="filter_wrapper">
+              <span>Filter by Region</span>
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.45 3.45L6 6.9L2.55 3.45L1.5 4.5L6 9L10.5 4.5L9.45 3.45Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <ul id="qitalar-wrapper" class="other-countries hidden">
+              <li class="types">All</li>
+              <li class="types">Africa</li>
+              <li class="types">Americas</li>
+              <li class="types">Asia</li>
+              <li class="types">Europe</li>
+              <li class="types">Oceania</li>
+            </ul>
+          </div>
+        </div>
+        <ul id="country" class="countries-wrapper-item"></ul>
+      </div>
+    </main>
+
+    
+    <script src="../js/mode.js"></script>
+    <script src="../js/request.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
