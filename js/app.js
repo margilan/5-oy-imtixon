@@ -2,6 +2,11 @@ const country = document.getElementById("country");
 const input = document.getElementById("in-dark-mode-input");
 const filterCountry = document.getElementById("qitalar-wrapper");
 const liCountry = document.querySelector(".countries-list");
+const send = document.querySelector('.Send')
+
+send && send.addEventListener('click' , function(){
+  confirm('Siz "Enter" tugmasini bosishingiz kerak ')
+})
 
 const UpdateUI = (data) => {
   country.innerHTML = "";

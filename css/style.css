@@ -13,11 +13,21 @@
   padding-right: 8;
 }
 #country{
-  box-shadow: 10px 5px 5px rgb(85, 84, 84);
+  /* box-shadow: 10px 5px 5px rgb(85, 84, 84); */
 }
 input {
   box-shadow: 12px 12px 2px 1px rgb(54, 54, 65 , 0.1);
   transition: all 0.5s;
+}
+.Send{
+  width: 100px;
+  height: 50px;
+  padding-left:-30px;
+  border:none;
+  background:blue;
+  color:white;
+  border-radius:6px;
+  cursor: pointer;
 }
 
 ul ol {
@@ -182,7 +192,7 @@ body {
   flex-wrap: wrap;
 }
 .countries-list:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
