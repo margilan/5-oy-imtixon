@@ -39,13 +39,6 @@ fetchData(API).then((data) => {
                 <p class="types"><strong>Currencies: </strong>${data.currencies} </p>
                 <p class="types"><strong>Languages: </strong>${data.languages} </p>
                 </div>
-            </div>
-            <div class="border_place container">
-                <p class="types">Border Countries: </p>
-                <div class="border_btns_wrapper">
-                <button class="border-btn">France</button>
-                <button class="border-btn">Germany</button>
-                <button class="border-btn">Netherlands</button>
-                </div>
             </div>`;
+            
 });

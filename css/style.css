@@ -295,6 +295,13 @@ main {
     transform: rotate(360deg);
   }
 }
+.buttons{
+  margin-left:735px;
+  margin-top: -140px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
 .loader {
   position: fixed;
