@@ -17,6 +17,7 @@
 }
 input {
   box-shadow: 12px 12px 2px 1px rgb(54, 54, 65 , 0.1);
+  transition: all 0.5s;
 }
 
 ul ol {
