@@ -302,7 +302,7 @@ main {
   gap: 16px;
 }
 .buttons h2 {
-  color: #fff;
+  color: black;
   cursor: pointer;
   font-family: "Nunito Sans";
   font-size: 16px;
@@ -321,6 +321,18 @@ border:none;
 color:white;
 cursor: pointer;
 }
+.two {
+  width: 96px;
+height: 28px;
+flex-shrink: 0;
+border-radius: 2px;
+background: #2B3844;
+box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+border:none;
+color:white;
+cursor: pointer;
+}
+
 
 .loader {
   position: fixed;
