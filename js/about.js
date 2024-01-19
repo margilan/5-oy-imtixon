@@ -28,7 +28,7 @@ fetchData(API).then((data) => {
             </div>
                 <div class="about_informations">
                 <h2 class="about_country-name">${data.name.common}</h2>
-                <p class="types"><strong>Native Name: </strong>${data.name.native}</p>
+                <p class="types"><strong>Native Name: </strong>Africa</p>
                 <p class="types"><strong>Population :</strong>${data.population} </p>
                 <p class="types"><strong>Region: </strong>${data.region}</p>
                 <p class="types"><strong>Sub Region: </strong> ${data.subregion}</p>

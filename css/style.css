@@ -12,8 +12,11 @@
   padding-left: 25px;
   padding-right: 8;
 }
+#country{
+  box-shadow: 10px 5px 5px rgb(85, 84, 84);
+}
 input {
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255);
+  box-shadow: 12px 12px 2px 1px rgb(54, 54, 65 , 0.1);
 }
 
 ul ol {
@@ -90,7 +93,7 @@ body {
   display: flex;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 0px 2px 9px 0px #0000000e;
+  box-shadow: 0px 2px 9px 0px black;
   cursor: pointer;
   gap: 2.4rem;
   padding-left: 3.2rem;
@@ -177,11 +180,15 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.countries-list:hover{
+  transform: scale(1.1);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 .countries-list {
   width: 26.4rem;
   height: 33.6rem;
-  box-shadow: 0px 0px 7px 2px #11111111;
+  transition: all 0.5s;
   border-radius: 1rem;
   background-color: var(--body-bc-in-light-color);
 }
