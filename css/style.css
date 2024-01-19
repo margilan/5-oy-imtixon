@@ -122,6 +122,12 @@ body {
   line-height: var(--p-line-height);
   outline: none;
 }
+.about_btn{
+  transition: all 0.5s;
+}
+.about_btn:hover{
+  transform:scale(1.2);
+}
 .filter_wrapper {
   width: 20rem;
   height: 5.6rem;
@@ -181,9 +187,6 @@ body {
   --in-light-mode-texta-color: #fff;
   --body-bc-in-light-color: rgb(78, 78, 78);
 }
-/* Header and header hero qismlari tugadi */
-/* =============================================================================== */
-/* Country-cards */
 .countries-wrapper-item {
   gap: 4.7rem;
   display: flex;
@@ -192,7 +195,7 @@ body {
   flex-wrap: wrap;
 }
 .countries-list:hover{
-  transform: scale(1.2);
+  transform: scale(1.3);
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -245,7 +248,7 @@ main {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fff;
+  background: linear-gradient(green,red,blue,orange);
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
@@ -280,7 +283,7 @@ main {
   animation-delay: -0.18s;
 }
 .lds-roller div:nth-child(5):after {
-  top: 71px;
+  top: 73px;
   left: 32px;
 }
 .lds-roller div:nth-child(6) {
@@ -301,8 +304,8 @@ main {
   animation-delay: -0.288s;
 }
 .lds-roller div:nth-child(8):after {
-  top: 56px;
-  left: 12px;
+  top: 55px;
+  left: 10px;
 }
 @keyframes lds-roller {
   0% {
@@ -327,8 +330,9 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 24px; /* 150% */
-}
+  transition: all 0.5s;
 
+}
 .frst{
   background-color:#11111111;
   border:none;
@@ -343,6 +347,11 @@ box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
 border:none;
 color:white;
 cursor: pointer;
+transition: all 0.5s;
+
+}
+.one:hover{
+  transform:scale(1.5);
 }
 .two {
   width: 96px;
@@ -354,6 +363,11 @@ box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
 border:none;
 color:white;
 cursor: pointer;
+transition: all 0.5s;
+
+}
+.two:hover{
+  transform:scale(1.5);
 }
 .three {
   width: 96px;
@@ -365,8 +379,11 @@ box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
 border:none;
 color:white;
 cursor: pointer;
+transition: all 0.5s;
 }
-
+.three:hover{
+  transform:scale(1.5);
+}
 
 .loader {
   position: fixed;
