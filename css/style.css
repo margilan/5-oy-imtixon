@@ -117,10 +117,10 @@ body {
   border-radius: 5px;
   color: var(--inputTextColor-color);
   background-color: var(--body-bc-in-light-color);
-
   font-size: var(--p-font-size);
   line-height: var(--p-line-height);
   outline: none;
+  padding-left: 100px;
 }
 .about_btn{
   transition: all 0.5s;
@@ -141,6 +141,10 @@ body {
   background-color: var(--body-bc-in-light-color);
   cursor: pointer;
   margin-left: 50px;
+  transition: all 0.5s;
+}
+.filter_wrapper:hover{
+  transform: scale(1.2);
 }
 
 .filter_wrapper span {
