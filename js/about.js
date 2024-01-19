@@ -1,10 +1,7 @@
 const wrapper = document.querySelector(".wrapper");
-
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const CountryName = urlParams.get("country-name").toLowerCase();
-
-console.log(CountryName);
 
 const API = `https://countries-api-v7sn.onrender.com/countries/slug/${CountryName}`;
 
@@ -14,7 +11,8 @@ const fetchData = async (url) => {
   return data;
 };
 
-fetchData(API).then((data) => {
+fetchData(API)
+.then((data) => {
   console.log(data);
   wrapper.innerHTML = "";
   wrapper.innerHTML = `<div class="about_wrapper-div container">
@@ -28,7 +26,7 @@ fetchData(API).then((data) => {
             </div>
                 <div class="about_informations">
                 <h2 class="about_country-name">${data.name.common}</h2>
-                <p class="types"><strong>Native Name: </strong>Africa</p>
+                <p class="types"><strong>Native Name: </strong>African American</p>
                 <p class="types"><strong>Population :</strong>${data.population} </p>
                 <p class="types"><strong>Region: </strong>${data.region}</p>
                 <p class="types"><strong>Sub Region: </strong> ${data.subregion}</p>
@@ -40,5 +38,4 @@ fetchData(API).then((data) => {
                 <p class="types"><strong>Languages: </strong>${data.languages} </p>
                 </div>
             </div>`;
-            
 });
