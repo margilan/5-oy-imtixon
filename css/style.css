@@ -183,9 +183,9 @@ body {
   display: none !important;
 }
 .dark-mode {
-  --body-bc-in-lightfor-body-color: rgb(43, 43, 43);
+  --body-bc-in-lightfor-body-color: rgb(45, 43, 43);
   --in-light-mode-texta-color: #fff;
-  --body-bc-in-light-color: rgb(78, 78, 78);
+  --body-bc-in-light-color: rgb(80, 78, 78);
 }
 .countries-wrapper-item {
   gap: 4.7rem;
@@ -229,17 +229,6 @@ body {
 main {
   flex-grow: 1;
   margin-bottom: 4.5rem;
-}
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .about_wrapper-div {
   display: flex;
