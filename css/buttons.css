@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.buttons {
+    margin-left: 735px;
+    margin-top: -140px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .buttons h2 {
+    color: black;
+    cursor: pointer;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    transition: all 0.5s;
+  
+  }
+  .frst{
+    background-color:#11111111;
+    border:none;
+  }
+  .one {
+    width: 96px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #2B3844;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+  border:none;
+  color:white;
+  cursor: pointer;
+  transition: all 0.5s;
+  
+  }
+  .one:hover{
+    transform:scale(1.5);
+  }
+  .two {
+    width: 96px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #2B3844;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+  border:none;
+  color:white;
+  cursor: pointer;
+  transition: all 0.5s;
+  
+  }
+  .two:hover{
+    transform:scale(1.5);
+  }
+  .three {
+    width: 96px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #2B3844;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+  border:none;
+  color:white;
+  cursor: pointer;
+  transition: all 0.5s;
+  }
+  .three:hover{
+    transform:scale(1.5);
+  }
