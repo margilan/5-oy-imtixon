@@ -6,6 +6,8 @@ const send = document.querySelector('.Send')
 const selectFilter = document.querySelector(".other-countries");
 const selectFilterAllLi = document.querySelectorAll(".other-countries li");
 const selectFilterSpan = document.querySelector(".filter_wrapper span");
+
+
 send && send.addEventListener('click' , function(){
   confirm('Siz "Enter" tugmasini bosishingiz kerak ')
 })
