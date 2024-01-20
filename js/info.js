@@ -3,7 +3,9 @@ const input = document.getElementById("in-dark-mode-input");
 const filterCountry = document.getElementById("qitalar-wrapper");
 const liCountry = document.querySelector(".countries-list");
 const send = document.querySelector('.Send')
-
+const selectFilter = document.querySelector(".other-countries");
+const selectFilterAllLi = document.querySelectorAll(".other-countries li");
+const selectFilterSpan = document.querySelector(".filter_wrapper span");
 send && send.addEventListener('click' , function(){
   confirm('Siz "Enter" tugmasini bosishingiz kerak ')
 })
@@ -46,9 +48,7 @@ filterWrapper.addEventListener("click", () => {
   const selectFilter = document.querySelector(".other-countries");
   selectFilter.classList.remove("hidden");
 });
-const selectFilter = document.querySelector(".other-countries");
-const selectFilterAllLi = document.querySelectorAll(".other-countries li");
-const selectFilterSpan = document.querySelector(".filter_wrapper span");
+
 selectFilterAllLi.forEach((li) => {
   li.addEventListener("click", () => {
     filterCountry.classList.add("hidden");
